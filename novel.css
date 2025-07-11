@@ -1,0 +1,117 @@
+/* 全体の基本設定 */
+body {
+  font-family: 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+  background-color: #fff;
+  color: #000;
+  line-height: 1.8;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 16px;
+}
+
+/* 本文を中央寄せ、最大幅を制限 */
+#main {
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #eee;
+  text-align: left;
+  line-height: 1.8;
+  border: 2px solid #222;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+/* タイトル */
+h1 {
+  font-size: 24px;
+  line-height: 30px;
+  margin: 0 0 20px 0;
+  padding: 3px;
+  text-align: center;
+  border-bottom: 1px solid #aaa;
+}
+
+/* 本文テキスト */
+.text p {
+  text-indent: 1em;
+  margin-bottom: 1em;
+}
+
+/*本文まとめ書き（いちいち改行タグしなくてOK）折り返し有効*/
+pre {
+  white-space: pre-wrap;    /* 折り返し有効にする */
+  font-family: 'Meiryo', sans-serif; /* 普通の日本語フォント */
+  line-height: 1.8;
+}
+/* リンク類 */
+a {
+  text-decoration: underline;
+  color: #000000;
+}
+a:visited {
+  color: #595E3C;
+}
+a:hover {
+  color: #404040;
+}
+a:active {
+  color: #FF0000;
+}
+
+/* ページャー */
+.pager {
+  text-align: center;
+  margin: 2em;
+}
+.pager a {
+  border: solid 2px gray;
+  background-color: #eeeeee;
+  padding: 0.5em 1em;
+  border-radius: 3px;
+  text-decoration: none;
+  margin: 0.5em;
+  display: inline-block;
+}
+
+/* コメント欄 */
+#comment {
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #eee;
+  text-align: center;
+  border: 2px solid #222;
+  border-radius: 8px;
+}
+
+#comment textarea {
+  width: 80%;
+  height: 100px;
+  padding: 8px;
+  font-size: 1em;
+  box-sizing: border-box;
+}
+
+/* TOPへ戻るリンク */
+.center {
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* スマホ対応 */
+@media screen and (max-width: 768px) {
+  #main, #comment {
+    margin: 20px;
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  .text p {
+    text-indent: 1em;
+  }
+}
